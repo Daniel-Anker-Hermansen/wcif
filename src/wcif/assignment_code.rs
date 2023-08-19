@@ -1,6 +1,6 @@
 use serde::{Deserialize, Deserializer, Serialize, Serializer};
 
-#[derive(Debug, PartialEq, Eq)]
+#[derive(Debug, PartialEq, Eq, Clone)]
 pub enum AssignmentCode {
     Competitor,
     Judge,
