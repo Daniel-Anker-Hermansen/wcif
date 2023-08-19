@@ -5,7 +5,7 @@ use chrono::{NaiveDateTime, ParseError};
 use serde::{de::Visitor, Deserialize, Serialize};
 
 /// Represents a time in zulu time.
-#[derive(PartialEq, Eq)]
+#[derive(PartialEq, Eq, Clone)]
 pub struct DateTime(NaiveDateTime);
 
 impl Debug for DateTime {
